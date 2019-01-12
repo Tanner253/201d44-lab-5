@@ -9,9 +9,9 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) { //eslint-disable-li
-var output = a + b
-var message = 'The sum of ' + a + ' and ' + b + ' is ' + output + '.';
-return [output, message];
+  var output = a + b;
+  var message = 'The sum of ' + a + ' and ' + b + ' is ' + output + '.';
+  return [output, message];
 }
 
 // Here is the test for sum(); uncomment it to run it
@@ -29,9 +29,9 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-    var output = a * b;
-    var message = 'The product of ' + a + ' and ' + b + ' is ' + output + '.';
-    return [output, message]
+  var output = a * b;
+  var message = 'The product of ' + a + ' and ' + b + ' is ' + output + '.';
+  return [output, message];
 }
 
 // Here is the test for multiply(); uncomment it to run it
@@ -52,11 +52,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-var sum1 = sum(a, sum(b, c)[0])[0];
-var multiple = multiply(a, multiply(b, c)[0])[0];
-var message1 = (a + ' and ' + b + ' and '  + c + ' sum to ' + sum1 + '.'); 
-var message2 = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + multiple + '.';
-return [sum1, multiple, message1, message2]
+  var sum1 = sum(a, sum(b, c)[0])[0];
+  var multiple = multiply(a, multiply(b, c)[0])[0];
+  var message1 = (a + ' and ' + b + ' and ' + c + ' sum to ' + sum1 + '.');
+  var message2 = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + multiple + '.';
+  return [sum1, multiple, message1, message2];
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
@@ -78,10 +78,10 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-var sum4 = sum(sumArr[0], sum(sumArr[1], sumArr[2])[0] )[0];
+  var sum4 = sum(sumArr[0], sum(sumArr[1], sumArr[2])[0] )[0];
 
-var message = sumArr + ' was passed in as an array of numbers, and ' + sum4 + ' is their sum.'; 
-return[sum4, message ];
+  var message = sumArr + ' was passed in as an array of numbers, and ' + sum4 + ' is their sum.';
+  return[sum4, message ];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
@@ -102,15 +102,17 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-var sum5 = multiply(multArr[0], multiply(multArr[1] , multArr[2])[0])[0]
-var message= 'The numbers ' + multArr + ' have a product of ' + sum5 + '.';
-return [sum5, message]
+  var sum5 = multiply(multArr[0], multiply(multArr[1] , multArr[2])[0])[0];
+  var message= 'The numbers ' + multArr + ' have a product of ' + sum5 + '.';
+  return [sum5, message];
 }
+var car = 9;
+
 
 // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyArray(testArray);
 
-// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
+// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
 // You're done! Submit the link to the repo following the instructions in Canvas. Or, try out the stretch goal below...
 
