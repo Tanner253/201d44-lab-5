@@ -133,20 +133,17 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line//eslint-disable-line
-var array = testDynamicArray;
-// eslint-disable-next-line no-unused-vars
-var ans = 1;
+
 // eslint-disable-next-line no-unused-vars
 function multiplyAnyArray(dynamicArray) {
   var i ;
-
+  var ans = 1;
   // eslint-disable-next-line no-redeclare
-  for(var i = 0 ; i < array.length ; i ++){
+  for(var i = 0 ; i < testDynamicArray.length ; i ++){
     ans = multiply(ans, dynamicArray[i])[0];
-    var message = 'The numbers ' + array + ' have a product of ' + ans + '.' ;
-    return [ans, message] ;
+    var message = 'The numbers ' + dynamicArray + ' have a product of ' + ans + '.' ;
   }
-
+  return [ans, message] ;
 }
 // // Here is the test for multiplyArray(); uncomment it to run it
 // // eslint-disable-next-line no-undef
